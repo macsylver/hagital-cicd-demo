@@ -1,11 +1,16 @@
 on:
-   push:
-      branches: [main]
+  push:
+     branches: [main]
 jobs:
    build:
-      run-on: ubuntu-latest
+      runs-on: ubuntu-latest
       steps:
+   
        - uses: actions/checkout@v4
        - name: say hello
-       run: echo "Hello from hagital cohrt"
+       run: echo"Hello from hagital cohrt"
       
+
+
+
+
