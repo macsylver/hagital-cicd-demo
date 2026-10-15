@@ -1,14 +1,22 @@
+```yaml
+name: Hagital CI/CD
+
 on:
   push:
-     branches: [main]
+    branches:
+      - main
+
 jobs:
-   build:
-      runs-on: ubuntu-latest
-      steps:
-       - uses: actions/checkout@v4
-       - name: say hello
-       run: echo"Hello from hagital cohrt"
-      
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Say hello
+        run: echo "Hello from Hagital cohort"
+```
 
 
 
