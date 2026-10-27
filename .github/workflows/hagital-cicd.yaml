@@ -14,7 +14,10 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Say hello
-        run: echo "Hello from Hagital cohort"
+        run: |
+           echo "Hello from Hagital cohort"
+           echo  "adding value to the cloud"
+           echo  "getting cloud energy"
 
 
 
